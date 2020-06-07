@@ -1,0 +1,21 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Sun Jun  7 15:37:38 2020
+
+@author: dell
+"""
+
+
+<html>
+<body>
+<form action="{{ url_for('predict')}}"method="post">
+
+<input type="text" name="t" placeholder="Age" required="required"/>
+<input type="text" name="s" placeholder="Salary" required="required"/>
+<input type="submit">
+</form>
+<br>
+{{ prediction_text }}
+<br>
+</body>
+</html>
